@@ -1,21 +1,24 @@
 server:
-    port: 8080
+  port: 8080
 
 spring:
-    datasource:
-        url: jdbc:postgresql://dpg-cperjglds78s73flp9i0-a/fatecjava
-        username: postgres1
-        password: A57LGpxZCIO59qJKSIKfIteZB1B5xcfx
-        driver-class-name: org.postgresql.Driver
-        initialize: true
+  datasource:
+    url: jdbc:postgresql://dpg-cperji5ds78s73flpa5g-a.oregon-postgress.render.com/postgre_cs91
+    username: klebinho2000
+    password: CeqQtwv84lOjw6ivwYr7Fqo5WDkD3Tx1
+    driver-class-name: org.postgresql.Driver
+    initialize: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
 
-    jpa: 
-        hibernate:
-            ddl-auto: create-drop
-            generate-ddl: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
 
-    sql:
-        init:
-            schema-locations: classpath:/schema-postgresql.sql
-            mode: always
-            platform: postgres
+  sql:
+    init:
+      schema-locations: classpath:/schema-postgresql.sql
+      mode: always
+      platform: postgres
